@@ -1,28 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Roboto:wght@100;300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SB Eats</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .background-img {
+        background-image: url(imgs/jeffw1.jpg);
+      }
+    </style>
   </head>
   <body>
-    <main>
-      <h1>
-        <a
-          href="index.html
-            "
-          >SB Eats</a
-        >
-      </h1>
+    <main class="background-img">
       <header>
-        <ul>
-          <li><a href="goleta.html">Goleta</a></li>
-          <li><a href="islavista.html">Isla Vista</a></li>
-          <li><a href="lowerstate.html">Lower State</a></li>
-          <li><a href="upperstate.html">Upper State</a></li>
-        </ul>
+        <div class="nav-container">
+          <h2 class="h2-align">
+            <a href="index.html" alt="Home page" class="h2-bold">SB Eats</a>
+          </h2>
+          <ul class="navUL">
+            <li>
+              <a href="islavista.html" alt="Isla Vista" class="nav-words"
+                >Isla Vista</a
+              >
+            </li>
+            <li>
+              <a href="goleta.html" alt="Goleta" class="nav-words">Goleta</a>
+            </li>
+            <li>
+              <a
+                href="lowerstate.html"
+                alt="Lower State Street"
+                class="nav-words"
+                >Lower State Street</a
+              >
+            </li>
+            <li>
+              <a
+                href="upperstate.html"
+                alt="Upper State Street"
+                class="nav-words"
+                >Upper State Street</a
+              >
+            </li>
+          </ul>
+        </div>
       </header>
+      <section class="front-page-align">
+        <h1 class="santa-barbara-home">GOLETA</h1>
+        <h2 class="p-text">Scroll down for more info.</h2>
+      </section>
+    </main>
+    <section>
+      <h2 class="center">Goleta</h2>
+    </section>
+    <section class="index-body">
       <table>
         <caption>
           Age Percentages in Goleta
@@ -53,12 +92,10 @@
           </tr>
         </tfoot>
       </table>
-      <br /><br />
-      <img
-        src="imgs/jeff-w-8PX-jC_8Mck-unsplash.jpeg"
-        alt="Santa Barbara Beach"
-        width="524"
-      />
-    </main>
+    </section>
+    <footer>
+      <h2>SB Eats</h2>
+      <p>Lina Vo &copy; 2023</p>
+    </footer>
   </body>
 </html>
