@@ -1,3 +1,7 @@
+PROJECT GOALS -
+
+For this project, I decided to create a website dedicated to some of my favorite restaurants I've visited in Santa Barbara. I had initially lived there for about 4 years until I decided to split ways and move to Los Angeles. Since then, I felt this project would be much more efficient if I chose a topic I was actually passionate about in. I already have a portfolio website from my undergraduate classes, and decided to add on to my current portfolio with this project. My goal was to be as authentic as I could and give my strong recommendations to the restaurants I have only visited. Although there are many great places I still have not eaten at, I felt as though it would be doing a disservice to my fellow readers to recommend something to them that I have not personally tried. For this project, I did my best to keep it as user friendly and simple for people of all ages to be able to use. For this project, I utilized HTML/CSS, Javascript, Vue, and much more to keep my viewers engaged.
+
 Image Credit/Photo By -
 
 Jeff W - @fortheloveofsmoke - unsplash.com
