@@ -81,9 +81,7 @@
             and has expanded throughout Southern California.
           </p>
 
-          <a href="https://los-agaves.com/" target="_blank"
-            ><button class="visitButton">Visit Website</button></a
-          >
+          <button class="visitButton" @click="goToAgaves">Visit Website</button>
         </div>
         <div class="losagaves">
           <img src="imgs/kyles.jpeg" alt="american food" class="goletaImgs" />
@@ -94,9 +92,7 @@
             gourmet burgers are like no others, their menu offers a wide
             selection for groups that prefer different meals.
           </p>
-          <a href="https://www.kyleskitchen.com/" target="_blank"
-            ><button class="visitButton">Visit Website</button></a
-          >
+          <button class="visitButton" @click="goToKyles">Visit Website</button>
         </div>
         <div class="losagaves">
           <img
@@ -111,9 +107,9 @@
             sandwiches! It is home to some of the most unique cold cuts you can
             get.
           </p>
-          <a href="https://www.picklesandswiss.com/menu" target="_blank"
-            ><button class="visitButton">Visit Website</button></a
-          >
+          <button class="visitButton" @click="goToPickles">
+            Visit Website
+          </button>
         </div>
       </div>
     </div>
@@ -139,6 +135,17 @@
           h2: "Isla Vista",
           h3: "Lower State Street",
           h4: "Upper State Street",
+        },
+        methods: {
+          goToPickles: function () {
+            window.location.href = "https://www.picklesandswiss.com/menu";
+          },
+          goToKyles: function () {
+            window.location.href = "https://www.kyleskitchen.com/";
+          },
+          goToAgaves: function () {
+            window.location.href = "https://los-agaves.com/";
+          },
         },
       });
     </script>

@@ -81,9 +81,7 @@
             not! Their most famous <em>Crispy Fried Chicken</em> is to die for.
           </p>
 
-          <a href="https://www.vonschicken-us.com/isla-vista" target="_blank"
-            ><button class="visitButton">Visit Website</button></a
-          >
+          <button class="visitButton" @click="goToVons">Visit Website</button>
         </div>
         <div class="losagaves">
           <img src="imgs/freebirds.jpeg" alt="burrito" class="goletaImgs" />
@@ -94,9 +92,9 @@
             delicious tacos. You can add any choice of toppings such as steak or
             just veggies. This restaurant is a must try for visiting Isla Vista.
           </p>
-          <a href="https://www.freebirdsiv.com/" target="_blank"
-            ><button class="visitButton">Visit Website</button></a
-          >
+          <button class="visitButton" @click="goToFreebirds">
+            Visit Website
+          </button>
         </div>
         <div class="losagaves">
           <img src="imgs/woodstocks.jpeg" alt="bbq pizza" class="goletaImgs" />
@@ -108,9 +106,7 @@
             options for their pizza and they make the best wings in Isla Vista.
             Come stop by to watch a game or just hang out with friends!
           </p>
-          <a href="https://woodstocksiv.com/" target="_blank"
-            ><button class="visitButton">Visit Website</button></a
-          >
+          <button class="visitButton" @click="goToWS">Visit Website</button>
         </div>
       </div>
     </div>
@@ -136,6 +132,17 @@
           h2: "Isla Vista",
           h3: "Lower State Street",
           h4: "Upper State Street",
+        },
+        methods: {
+          goToVons: function () {
+            window.location.href = "https://www.vonschicken-us.com/isla-vista";
+          },
+          goToFreebirds: function () {
+            window.location.href = "https://www.freebirdsiv.com/";
+          },
+          goToWS: function () {
+            window.location.href = "https://woodstocksiv.com/";
+          },
         },
       });
     </script>

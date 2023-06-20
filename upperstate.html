@@ -79,9 +79,7 @@
             dishes to try is their lobster ravioli.
           </p>
 
-          <a href="https://www.lurefishhouse.com/" target="_blank"
-            ><button class="visitButton">Visit Website</button></a
-          >
+          <button class="visitButton" @click="goToLureFS">Visit Website</button>
         </div>
         <div class="losagaves">
           <img src="imgs/chinese.jpeg" alt="chinese food" class="goletaImgs" />
@@ -94,9 +92,9 @@
             Chinese restaurants in Santa Barbara, but this definitely takes the
             top spot.
           </p>
-          <a href="https://mandarinpalacetogo.com/" target="_blank"
-            ><button class="visitButton">Visit Website</button></a
-          >
+          <button class="visitButton" @click="goToMandarin">
+            Visit Website
+          </button>
         </div>
         <div class="losagaves">
           <img
@@ -113,9 +111,7 @@
             even their cooked barbecue rice dishes. There are plenty of
             appetizers for guests to enjoy with some sake.
           </p>
-          <a href="https://kyotosb.com/" target="_blank"
-            ><button class="visitButton">Visit Website</button></a
-          >
+          <button class="visitButton" @click="goToKyoto">Visit Website</button>
         </div>
       </div>
     </div>
@@ -141,6 +137,17 @@
           h2: "Isla Vista",
           h3: "Lower State Street",
           h4: "Upper State Street",
+        },
+        methods: {
+          goToLureFS: function () {
+            window.location.href = "https://www.lurefishhouse.com/";
+          },
+          goToMandarin: function () {
+            window.location.href = "https://mandarinpalacetogo.com/";
+          },
+          goToKyoto: function () {
+            window.location.href = "https://kyotosb.com/";
+          },
         },
       });
     </script>

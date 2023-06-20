@@ -226,6 +226,9 @@ form button:hover {
   transition: 0.2s ease-in-out;
   cursor: pointer;
 }
+.visitButton a:hover {
+  color: black;
+}
 #goletaCont {
   display: flex;
   flex-direction: column;

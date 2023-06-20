@@ -87,9 +87,9 @@
             are in the mood for fresh fish or cooked meats!
           </p>
 
-          <a href="https://somethingsfishysb.com/" target="_blank"
-            ><button class="visitButton">Visit Website</button></a
-          >
+          <button class="visitButton" @click="goToSomethingsFishy">
+            Visit Website
+          </button>
         </div>
         <div class="losagaves">
           <img src="imgs/steak.jpeg" alt="steak" class="goletaImgs" />
@@ -100,9 +100,9 @@
             Their menu and service will make you not regret making reservations
             ahead!
           </p>
-          <a href="https://www.holdrens.com/" target="_blank"
-            ><button class="visitButton">Visit Website</button></a
-          >
+          <button class="visitButton" @click="goToHoldrens">
+            Visit Website
+          </button>
         </div>
         <div class="losagaves">
           <img src="imgs/pascucci.jpeg" alt="ravioli" class="goletaImgs" />
@@ -114,9 +114,9 @@
             have a variety of different wines and beers to compliment the
             Italian menu.
           </p>
-          <a href="https://www.pascuccirestaurant.com/" target="_blank"
-            ><button class="visitButton">Visit Website</button></a
-          >
+          <button class="visitButton" @click="goToPascucci">
+            Visit Website
+          </button>
         </div>
       </div>
     </div>
@@ -142,6 +142,17 @@
           h2: "Isla Vista",
           h3: "Lower State Street",
           h4: "Upper State Street",
+        },
+        methods: {
+          goToSomethingsFishy: function () {
+            window.location.href = "https://somethingsfishysb.com/";
+          },
+          goToHoldrens: function () {
+            window.location.href = "https://www.holdrens.com/";
+          },
+          goToPascucci: function () {
+            window.location.href = "https://www.pascuccirestaurant.com/";
+          },
         },
       });
     </script>
