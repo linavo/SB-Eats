@@ -55,7 +55,7 @@
     </main>
     <div id="goletaCont">
       <div class="goletaSCont">
-        <h1 class="header1">Upper State Street</h1>
+        <h1 class="header1">{{ h4 }}</h1>
         <p class="goletaP">
           Upper State Street has a wide variety of different restaurants at
           different locations to explore! It is known to be around plenty of
@@ -133,6 +133,17 @@
       ></a>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script>
+      var pages = new Vue({
+        el: "#goletaCont",
+        data: {
+          h1: "Goleta",
+          h2: "Isla Vista",
+          h3: "Lower State Street",
+          h4: "Upper State Street",
+        },
+      });
+    </script>
     <script src="script.js"></script>
   </body>
 </html>

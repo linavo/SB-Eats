@@ -29,25 +29,23 @@ body {
 }
 .indexButton {
   margin-top: 25px;
-  padding: 15px 0px;
-  background-color: rgba(255, 255, 255, 0);
-  border: white solid 1.5px;
-  border-radius: 3px;
-  transition: 1s;
-}
-.button-index {
   padding: 15px 30px;
   font-size: 20px;
   font-weight: 100;
   font-family: "Roboto Condensed", sans-serif;
+  background-color: rgba(255, 255, 255, 0);
+  border: white solid 1.5px;
+  border-radius: 3px;
+  transition: 1s;
+  color: white;
 }
 .indexButton:hover {
-  background-color: white;
-  transition: 1s;
-}
-.button-index:hover {
   color: black;
+  background-color: #fff;
+  transition: 0.5s;
+  cursor: pointer;
 }
+
 header {
   display: flex;
   justify-content: center;
@@ -78,9 +76,8 @@ a {
   font-weight: 100;
 }
 .nav-words {
-  letter-spacing: -0.6px;
-  font-size: 1.1em;
-  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-family: "Roboto Condensed", sans-serif;
 }
 .nav-words:hover {
   text-decoration: underline;
@@ -247,12 +244,44 @@ form button:hover {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-bottom: 4em;
+  margin-bottom: 12em;
 }
 .goletaImgs {
   margin: 1em;
   width: 400px;
   height: 500px;
+}
+.popUp {
+  opacity: 0;
+  position: absolute;
+  top: 20vh;
+  right: 35vw;
+  width: 30vw;
+  height: 45vh;
+  background-color: rgba(0, 0, 0, 0.903);
+  border-radius: 30px;
+  box-shadow: 4px 4px 10px black;
+  transition: 0.2s;
+}
+.popUp h2 {
+  font-family: "Roboto Condensed", sans-serif;
+  color: white;
+  text-align: center;
+}
+.popUp a {
+  list-style: none;
+  font-size: 2em;
+}
+.popUp a:hover {
+  color: rgb(65, 81, 95);
+}
+.exit {
+  text-align: right;
+  padding: 1em 1em 0 0;
+  margin: 0;
+}
+.exit:hover {
+  cursor: pointer;
 }
 
 @media screen and (max-width: 514px) {

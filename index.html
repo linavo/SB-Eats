@@ -24,6 +24,24 @@
   </head>
   <body>
     <main class="background-img">
+      <div class="popUp">
+        <p class="exit">❌</p>
+        <h2>Where would you like to visit?</h2>
+        <ul>
+          <a href="islavista.html">
+            <li>Isla Vista</li>
+          </a>
+          <a href="goleta.html">
+            <li>Goleta</li>
+          </a>
+          <a href="lowerstate.html">
+            <li>Lower State Street</li>
+          </a>
+          <a href="upperstate.html">
+            <li>Upper State Street</li>
+          </a>
+        </ul>
+      </div>
       <header>
         <div class="nav-container">
           <h2 class="h2-align">
@@ -48,12 +66,10 @@
           </ul>
         </div>
       </header>
-      <section class="front-page-align">
+      <section class="front-page-align" id="indexPage">
         <h1 class="santa-barbara-home">SANTA BARBARA</h1>
         <h2 class="p-text">Sandy shores await you.</h2>
-        <button class="indexButton">
-          <a href="islavista.html" class="button-index">GET STARTED</a>
-        </button>
+        <button class="indexButton">GET STARTED</button>
       </section>
     </main>
 
@@ -70,5 +86,7 @@
         ></i
       ></a>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

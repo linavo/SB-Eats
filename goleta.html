@@ -55,7 +55,7 @@
     </main>
     <div id="goletaCont">
       <div class="goletaSCont">
-        <h1 class="header1">Goleta</h1>
+        <h1 class="header1">{{ h1 }}</h1>
         <p class="goletaP">
           Goleta is located west of Santa Barbara and north of Isla Vista. It is
           the home to many college students, families, and young adults! Located
@@ -130,5 +130,17 @@
         ></i
       ></a>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script>
+      var pages = new Vue({
+        el: "#goletaCont",
+        data: {
+          h1: "Goleta",
+          h2: "Isla Vista",
+          h3: "Lower State Street",
+          h4: "Upper State Street",
+        },
+      });
+    </script>
   </body>
 </html>

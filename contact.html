@@ -61,7 +61,12 @@
           </p>
         </div>
 
-        <form action="processform.php" method="post">
+        <form
+          action="processform.php"
+          method="post"
+          novalidate
+          onsubmit="return validateForm();"
+        >
           <fieldset class="flname">
             <div class="fn">
               <label for="firstName"

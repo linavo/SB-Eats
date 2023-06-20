@@ -56,7 +56,7 @@
 
     <div id="goletaCont">
       <div class="goletaSCont">
-        <h1 class="header1">Isla Vista</h1>
+        <h1 class="header1">{{ h2 }}</h1>
         <p class="goletaP">
           Isla Vista is located south of Goleta and right next to the University
           of California, Santa Barbara (UCSB). It is home to many colleges
@@ -127,5 +127,17 @@
         ></i
       ></a>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script>
+      var pages = new Vue({
+        el: "#goletaCont",
+        data: {
+          h1: "Goleta",
+          h2: "Isla Vista",
+          h3: "Lower State Street",
+          h4: "Upper State Street",
+        },
+      });
+    </script>
   </body>
 </html>
