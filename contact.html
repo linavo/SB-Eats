@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Roboto:wght@100;300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SB Eats</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body a {
+        color: black;
+        font-weight: 300;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="background-img">
+      <header>
+        <div class="nav-container">
+          <h2 class="h2-align">
+            <a href="index.html" class="h2-bold">SB Eats</a>
+          </h2>
+          <ul class="navUL">
+            <li>
+              <a href="islavista.html" class="nav-words">Isla Vista</a>
+            </li>
+            <li>
+              <a href="goleta.html" class="nav-words">Goleta</a>
+            </li>
+            <li>
+              <a href="lowerstate.html" class="nav-words">Lower State Street</a>
+            </li>
+            <li>
+              <a href="upperstate.html" class="nav-words">Upper State Street</a>
+            </li>
+            <li>
+              <a href="contact.html" class="nav-words">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <div class="contactContainer">
+        <div class="contactInfo">
+          <h1>Contact Us</h1>
+          <p>
+            While Santa Barbara has a lot to offer, there are many more places
+            to explore in the area that has not been listed. Feel free to send
+            us a message anytime. <br /><br />
+            linaqvo@gmail.com <br />
+            (916) 753-7651
+          </p>
+        </div>
+
+        <form action="processform.php" method="post">
+          <fieldset class="flname">
+            <div class="fn">
+              <label for="firstName"
+                >First Name <span class="grayText">(required)</span></label
+              >
+              <input
+                type="text"
+                name="firstName"
+                id="firstName"
+                title="Please enter a name longer than 2 characters"
+              />
+            </div>
+            <div class="ln">
+              <label for="lastName"
+                >Last Name <span class="grayText">(required)</span></label
+              >
+              <input
+                type="text"
+                name="lastName"
+                id="lastName"
+                title="Please enter a name longer than 2 characters"
+                required
+              />
+            </div>
+          </fieldset>
+          <div class="emailcont">
+            <label for="email"
+              >Email <span class="grayText">(required)</span></label
+            >
+            <input type="email" name="email" id="email" required />
+          </div>
+          <div class="messagecont">
+            <label for="message">Message (required)</label>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="15"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" name="send" value="Submit">Submit</button>
+        </form>
+      </div>
+      <footer>
+        <h2>SB Eats</h2>
+        <p>Lina Vo &copy; 2023</p>
+        <a href="https://github.com/linavo/SB-Eats" target="_blank">
+          <i class="fa fa-github" style="font-size: 2em; color: white"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/linaqvo/" target="_blank">
+          <i
+            class="fa fa-linkedin-square"
+            style="font-size: 2em; color: white"
+          ></i
+        ></a>
+      </footer>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

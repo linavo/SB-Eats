@@ -26,7 +26,7 @@ body {
 .santa-barbara-home {
   font-size: 5em;
 }
-button {
+.indexButton {
   margin-top: 25px;
   padding: 15px 0px;
   background-color: rgba(255, 255, 255, 0);
@@ -40,7 +40,7 @@ button {
   font-weight: 100;
   font-family: "Roboto Condensed", sans-serif;
 }
-button:hover {
+.indexButton:hover {
   background-color: white;
   transition: 1s;
 }
@@ -119,8 +119,95 @@ a {
   color: black;
 }
 footer {
-  margin-top: 5em;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #2a2829;
+  padding: 0.5em;
+  padding-top: 4em;
   text-align: center;
+  color: white;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+footer p h2 {
+  margin: 0;
+}
+footer h2 {
+  font-size: 3em;
+}
+.contactContainer {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 5em;
+}
+.contactInfo {
+  width: 30vw;
+}
+.contactInfo p {
+  font-size: 1.2em;
+  color: rgb(41, 41, 41);
+  line-height: 2em;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+.contactInfo h1 {
+  font-size: 3em;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em;
+  color: rgb(60, 60, 60);
+}
+.flname {
+  display: flex;
+  border: none;
+}
+label {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  letter-spacing: 1px;
+}
+.emailcont {
+  margin-bottom: 1em;
+}
+#firstName,
+#lastName {
+  width: 23em;
+  height: 3em;
+}
+.ln {
+  margin-left: 1em;
+}
+#email {
+  width: 48em;
+  height: 3em;
+  margin-bottom: 1em;
+}
+#message {
+  width: 48em;
+}
+.grayText {
+  color: rgb(149, 149, 149);
+}
+form button {
+  margin-top: 1em;
+  padding: 15px 30px;
+  font-size: 20px;
+  font-family: "Roboto Condensed", sans-serif;
+  border-radius: 3px;
+  border: none;
+  background-color: black;
+  color: white;
+  transition: 0.5s;
+}
+form button:hover {
+  background-color: #fff;
+  color: black;
+  transition: 0.2s ease-in-out;
 }
 
 @media screen and (max-width: 514px) {
@@ -159,7 +246,6 @@ footer {
     justify-content: center;
   }
 }
-
 @media screen and (max-width: 657px) {
   .santa-barbara-home {
     font-size: 4em;
