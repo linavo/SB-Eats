@@ -1,3 +1,6 @@
+:root {
+  font-size: calc(0.625rem + 0.4vw);
+}
 body {
   margin: 0 0 0 0;
   font-family: "Roboto", sans-serif;
@@ -287,49 +290,8 @@ form button:hover {
   cursor: pointer;
 }
 
-@media screen and (max-width: 514px) {
-  .santa-barbara-home {
-    padding: 1em;
-  }
-  .h2-bold {
-    font-size: 1.5em;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-  }
-  .nav-container {
-    flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.689);
-    width: 100vw;
-  }
-  .navUL {
-    flex-direction: column;
-    text-align: center;
-    padding: 0;
-    background-color: rgba(0, 0, 0, 0.537);
-    width: 100vw;
-  }
-  .navUL > li {
-    width: 100vw;
-    border: 1px solid black;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-  }
-  .nav-words {
-    font-size: 1.25em;
-    font-weight: 400;
-    font-family: "Roboto", sans-serif;
-  }
-  .h2-align {
-    justify-content: center;
-  }
-}
-@media screen and (max-width: 657px) {
-  .santa-barbara-home {
-    font-size: 4em;
-  }
-}
 @media screen and (max-width: 795px) {
-  li {
-    list-style-type: none;
+  .nav-words:hover {
+    text-decoration: none;
   }
 }
